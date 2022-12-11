@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,600&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/32a4d2e812.js" crossorigin="anonymous"></script>
+    <title>WEBSITE</title>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+		}
+
+		.container{
+			margin-top: 8px;
+			margin-bottom:8px;
+			width: 1520px;
+			margin-left: auto;
+			margin-right: auto;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		.container2{
+			margin-top: 56px;
+			width: 1520px;
+			margin-left: auto;
+			margin-right: auto;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		.container5{
+			margin-top: 56px;
+			width: 1200px;
+			margin-left: auto;
+			margin-right: auto;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			gap: 10px;
+		}
+
+		.container3{
+			margin-top: 60px;
+			width: 1520px;
+			margin-left: auto;
+			margin-right: auto;
+			display: flex ;
+			justify-content: space-between;
+
+		}
+
+		.container4{
+			width: 1520px;
+			margin-left: auto;
+			margin-right: auto;
+			padding-top: 32px;
+			display: flex;
+			justify-content: space-between;
+		}
+
+		.conA{
+			width: 1000px;
+			margin-left: auto;
+			margin-right: auto;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin-top: 56px;
+		}
+
+		.images{
+			width: 480px;
+			height: 600px;
+			background-image: url(https://w.namu.la/s/eb0035196328e776f5c67599dfe5687ddb9040d4fd57244ef10c6c761799e0c06d2550496d4d927696efbb6e59ce9977e6883a2adaa80284c0e1e2c3d9d78c6b09475e10c9fd3554ba06137d70f78e201b1e5510b6ccb16518482111a9014582);
+			background-position: center;
+			background-size: cover;
+			border: 1px solid red;
+		}
+
+
+		.card {
+			width: 480px;
+			height: 600px;
+			box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+		}
+
+		.logo{
+			font-size: 24px;
+			font-family: 'Kanit', sans-serif;
+			color: #3d3d3d;
+			margin-left: 8px;
+			text-decoration: none;
+
+		}
+
+		.list{
+			list-style: none;
+			display: flex;
+			font-family: 'Noto Sans KR', sans-serif;
+
+		}
+
+		.list a {
+			font-size: 14px;
+			margin-left: 96px;
+			text-decoration: none;
+			color: #3d3d3d;
+		}
+
+		.list a:hover{
+			color: #6727BA;
+
+		}
+
+		.list2{
+			list-style: none;
+			display: flex;
+			font-family: 'Noto Sans KR', sans-serif;
+		}
+
+		.list2 a{
+			font-size: 12px;
+			text-decoration: none;
+			color: #3d3d3d;
+			margin-right: 20px;
+		}
+
+		.login{
+			color: white;
+			background-color:#6727ba ;
+			margin-right: 8px;
+			padding: 6px 12px 6px 12px;
+			border: 1px solid #6727BA;
+			font-size: 12px;
+			border-radius: 12px;
+			font-family: 'Noto Sans KR', sans-serif;
+			text-decoration: none;
+		}
+
+		.image{
+			margin-left: auto;
+			margin-right: auto;
+			width: 1520px;
+			height: 400px;
+			background-size: cover;
+			background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1623517272043-cae1572afc96?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80);
+			background-position: center;
+			position: relative;
+		}
+
+		.images{
+			border: none;
+		}
+
+		.text{
+			position: absolute;
+			bottom: 150px;
+			left: 48px;
+			color: white;
+			font-size: 36px;
+			font-family: 'Noto Sans KR', sans-serif;
+
+
+		}
+
+		.text span{
+			color:  #C99FFF;
+
+		}
+
+		.text2{
+			position: absolute;
+			top: 120px;
+			left: 48px;
+			color: white;
+			font-size: 16px;
+			font-family: 'Noto Sans KR', sans-serif;
+
+		}
+
+		.text3{
+			position: absolute;
+			bottom: 100px;
+			left: 48px;
+			color: white;
+			font-size: 12px;
+			border: 1px solid #6727BA;
+			padding: 6px 12px 6px 12px;
+			border-radius: 12px;
+			font-family: 'Noto Sans KR', sans-serif;
+			background-color: #6727BA;
+			text-decoration: none;
+
+		}
+
+		.text3 a{
+			text-decoration: none;
+		}
+
+
+		.text4 span{
+			color: #3d3d3d;
+			font-weight: 600;
+			font-size: 24px;
+            
+		}
+
+		a{
+			text-decoration: none;
+		}
+
+		.artist{
+			text-align: center;
+			margin-top: 100px;
+			width: 1520px;
+			margin-right: auto;
+			margin-left: auto;
+			font-family: 'Noto Sans KR', sans-serif;
+		}
+
+		.artist span{
+			font-family: 'Kanit', sans-serif;
+			font-size: 32px;
+			color: #3d3d3d;
+			letter-spacing: 0.05em;
+
+		}
+
+		.artist2{
+			display: block;
+			border-radius: 50%;
+		}
+
+		.w1 {
+			font-family: 'Kanit', sans-serif;
+			font-size: 28px;
+			color: #3d3d3d;
+			letter-spacing: 0.05em;
+			margin-left: 40px;
+			margin-top: 64px;
+			margin-bottom: 64px;
+
+		}
+
+		.w2 {
+			font-family: 'Noto Sans KR', sans-serif;
+			font-size: 16px;
+			color: #3d3d3d;
+			letter-spacing: 0.05em;
+			margin-left: 40px;
+			font-weight: 300;
+
+		}
+
+		.w2:not(:first-child) {
+			margin-top: 28px;
+		}
+
+		.w2 span {
+            font-weight: 600;
+
+		}
+
+		.more {
+			display: block;
+			padding: 20px 20px;
+			text-align: center;
+			width: 440px;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 48px;
+			color: white;
+			background-color: #6727ba;
+			font-weight: 600;
+		    text-decoration: none;
+		    transition: 0.3s ease;
+		}
+
+		.more:hover {
+			background-color: white;
+			border: 1px solid #6727ba;
+			color: #6727ba;
+		}
+
+		.box1{
+			margin-top: 100px;
+		}
+
+		.box2{
+			display: inline-block;
+			width: 320px;
+			height: 320px;
+			border-radius: 50%;
+			overflow: hidden;
+
+		}
+
+		.box2 .profile:hover {
+			transform: scale(1.1);
+		}
+
+		.profile{
+			width: 320px;
+			height: 320px;
+			object-fit: cover;
+			transition: transform 0.3s;
+		}
+
+		.item{
+			margin-top: 48px;
+		}
+
+		p {  
+			margin-top: 36px;
+			text-align: center;
+			color: #636363;
+		}
+
+		.button{
+			margin-left: auto;
+			margin-right: auto;
+			border: 1px solid #636363;
+			padding: 8px 60px 8px 60px;
+			border-radius: 12px;
+			font-family: 'Noto Sans KR', sans-serif;
+			color: #636363;
+			text-decoration: none;
+			transition: 0.3s ease;
+
+		}
+
+		.button:hover {
+			background-color: #6727ba;
+			color: white;
+			border: 1px solid white;
+		}
+		h1{ 
+			font-size: 16px;
+			font-weight: 500;
+			margin-top: 12px;
+			font-family: 'Noto Sans KR', sans-serif;
+		}
+
+		h2{
+			font-size: 12px;
+			color: #6B6B6B;
+			margin-top: 16px;
+			font-family: 'Noto Sans KR', sans-serif;
+			font-weight: 500;
+
+		}
+
+		h3{
+			font-size: 12px;
+			color: #6B6B6B;
+			margin-top: 4px;
+			font-family: 'Noto Sans KR', sans-serif;
+			font-weight: 500;
+        }
+
+        h4{
+
+        	font-size: 12px;
+			color: #6B6B6B;
+			margin-top: 12px;
+			font-family: 'Noto Sans KR', sans-serif;
+			font-weight: 500;
+			padding-bottom: 12px;
+
+        }
+
+        .title{
+        	font-size: 24px;
+        	color: #6B6B6B;
+        	font-family: 'Kanit', sans-serif;
+        }
+
+
+		footer{
+			background-color: #CFCFCF;
+			margin-top: 112px;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+	<a class="logo" href="index.html">ASMRTIST</a>
+	<ul class="list">
+		<li><a href="index.html">메인</a></li>
+		<li><a href="index2.html">About</a></li>
+		<li><a href="index3.html">아티스트</a></li>
+		<li><a href="index7.html">스토어</a></li>
+	</ul>
+	<a class="login" href="#">로그인/가입</a>
+	</div>
+    
+    <div class="container">
+	<div class="image">
+	<div class="text2">ASMR Artist Introduction</div>
+	<div class="text"><span>아티스트 소개</span>를 통해
+		<br>맞는 취향을 골라보세요</div>
+	<a class="text3" href="index2.html">더 알아보기</a>
+		</div>
+	</div>
+
+	<div class="box1">
+		<div class="artist">
+			<span>ASMR ARTISTS</span><br>나만의 아티스트를 찾아보세요!
+		</div>
+	</div>
+
+    <div class="container">
+    	<div class="item">
+	<a class="box2" href="index3.html"><img class="profile" src="https://w.namu.la/s/6f553abbe606e1ba86e648888e3096e4636bc48f0879ced8bb75fbd6bf2ac5ac05ba07687b8e515fc7207cf0d0f28aa4389e121f70d0cdd04446add9537a99e8745c89010f1db173c310c7fd356140477393a6e8143eac06380830c29260445d">
+	</a>
+	<a href="index3.html"><p>DANA ASMR</p></a>
+	</div>
+
+	<div class="item">
+	<a class="box2" href="index4.html"><img class="profile" src="https://nationaltoday.com/wp-content/uploads/2021/10/world-whale-day-640x514.jpg">
+	</a>
+	<a href="index4.html"><p>WHALE SOUNDS</p></a>
+	</div>
+
+	<div class="item">
+	<a class="box2" href="index5.html"><img class="profile" src="https://w.namu.la/s/daa6042cb81fe6ff521dc12e6458778ed866f9f850dec3c9de030e8ce34341d8ce99e7b7c8710eedfe5f6e3733d83dccdec8a4c2b14f3c7c04db141025ade875549a059ef150b28e5f9c289f18a7fab419ce77b4cefb0f52eb8c677fa7fa98ca">
+	</a>
+	<a href="index5.html"><p>SOY ASMR</p></a>
+	</div>
+
+	<div class="item">
+	<a class="box2" href="index6.html"><img class="profile" src="https://w.namu.la/s/e0c2a47fd3c7c514f64bdfed11f3bc8f3a4e22550a5e68df4008579dc5e0c0faf376e72a9e034052429c59925ea58cbada6ce72b482e19e1a4f0d8ee8512988afa0dca53aa5a46a83d1eb2803a661fcb38891fcc544e5702edc974cda06ed0868460f6f199df6e37cb6d220b8dcdf54a">
+	</a>
+	<a href="index6.html"><p>MONGSIL</p></a>
+	</div>
+</div>
+     <div class="container2">
+    <a class="button" href="https://www.youtube.com/results?search_query=asmr+%EC%9C%A0%ED%8A%9C%EB%B2%84">
+    	더보기
+    </a>
+</div>
+
+<div class="box1">
+		<div class="artist">
+			<span>NARA ASMR</span><br>롤플레잉 전문 ASMR.
+		</div>
+	</div>
+<div class="conA">
+<div class="images"></div>
+	<div class="card">
+		<div class="w1">PROFILE</div>
+		<div class="w2"> <span>활동명</span>: NARA ASMR</div>
+		<div class="w2"> <span>본명</span>: 나라</div>
+		<div class="w2"> <span>국적</span>: 대한민국</div>
+		<div class="w2"> <span>채널 개설일</span>: 2018년 11월 6일</div>
+		<div class="w2"> <span>총 조회수</span>: 131,064,790회</div>
+		<div class="w2"> <span>구독자 수</span>: 92.3만명</div>
+		<a class="more" href="https://www.youtube.com/@nara.asmr.">정보 더보기</span>
+	</a>
+
+		
+	</div>
+</div>
+
+<div class="box1">
+		<div class="artist">
+			<span>VIDEOS</span><br>유튜버들의 다양한 동영상들을 확인해보세요!
+		</div>
+	</div>
+
+	<div class="container5">
+		<iframe width="640" height="315" src="https://www.youtube.com/embed/LTEfWh6LDgc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<iframe width="640" height="315" src="https://www.youtube.com/embed/GtD6EL4jeBw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+     
+
+	<footer>
+		<div class="container4">
+        <div class="foot">
+		<ul class="list2">
+		<li><a href="#">회사 소개</a></li>
+		<li><a href="#">개인정보 처리방침</a></li>
+		<li><a href="#">이용약관</a></li>
+		<li><a href="#">유료 이용약관</a></li>
+		<li><a href="#">셀러 이용약관</a></li>
+		<li><a href="#">서비스 소개</a></li>
+	</ul>
+	<h2>사업자 등록번호:556-88-00394</h2>
+	<h3>대표:김제욱 회사명: (주)에이에스엠아티스트</h3>
+	<h4>©Copyright ASMRtist Inc. All Rights Reserved. </h4>
+</div>
+	<div class="title">ASMRTIST<br>
+		<span class="fa-brands fa-twitter">
+			<span class="fa-brands fa-facebook">
+				<span class="fa-brands fa-instagram">
+			</div>
+
+</div>
+
+	</footer>
+
+
+
+
+
+
+
+</body>
+</html>
