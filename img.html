@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,600&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
+    <title>WEBSITE</title>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+		}
+
+		.container{
+			margin-top: 8px;
+			margin-bottom:8px;
+			width: 1520px;
+			margin-left: auto;
+			margin-right: auto;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		.container2{
+			margin-top: 56px;
+			width: 1520px;
+			margin-left: auto;
+			margin-right: auto;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+
+		.container4{
+			width: 1440px;
+			margin-left: auto;
+			margin-right: auto;
+			padding-top: 32px;
+		}
+
+		.logo{
+			font-size: 24px;
+			font-family: 'Kanit', sans-serif;
+			color: #3d3d3d;
+			margin-left: 8px;
+
+		}
+
+		.list{
+			list-style: none;
+			display: flex;
+			font-family: 'Noto Sans KR', sans-serif;
+
+		}
+
+		.list a {
+			font-size: 14px;
+			margin-left: 96px;
+			text-decoration: none;
+			color: #3d3d3d;
+		}
+
+		.list2{
+			list-style: none;
+			display: flex;
+			font-family: 'Noto Sans KR', sans-serif;
+		}
+
+		.list2 a{
+			font-size: 12px;
+			text-decoration: none;
+			color: #3d3d3d;
+			margin-right: 20px;
+
+		}
+
+		.login{
+			color: white;
+			background-color:#6727ba ;
+			margin-right: 8px;
+			padding: 6px 12px 6px 12px;
+			border: 1px solid #6727BA;
+			font-size: 12px;
+			border-radius: 12px;
+			font-family: 'Noto Sans KR', sans-serif;
+		}
+
+		.image{
+			margin-left: auto;
+			margin-right: auto;
+			width: 1520px;
+			height: 400px;
+			background-size: cover;
+			background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1556196148-1fb724238998?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
+			background-position: center;
+			position: relative;
+		}
+
+		.text{
+			position: absolute;
+			bottom: 150px;
+			left: 48px;
+			color: white;
+			font-size: 36px;
+			font-family: 'Noto Sans KR', sans-serif;
+
+
+		}
+
+		.text span{
+			color:  #C99FFF;
+
+		}
+
+		.text2{
+			position: absolute;
+			top: 120px;
+			left: 48px;
+			color: white;
+			font-size: 16px;
+			font-family: 'Noto Sans KR', sans-serif;
+
+		}
+
+		.text3{
+			position: absolute;
+			bottom: 100px;
+			left: 48px;
+			color: white;
+			font-size: 12px;
+			border: 1px solid #6727BA;
+			padding: 6px 12px 6px 12px;
+			border-radius: 12px;
+			font-family: 'Noto Sans KR', sans-serif;
+			background-color: #6727BA;
+			text-decoration: none;
+
+		}
+
+		.text3 a{
+			text-decoration: none;
+		}
+
+		.text4{
+			width: 1440px;
+			text-align: center;
+			margin-left: auto;
+			margin-right: auto;
+			font-size: 20px;
+			font-family: 'Noto Sans KR', sans-serif;
+			margin-top: 36px;
+			color: #757575;
+			letter-spacing: 0.02em;
+		}
+
+		.text4 span{
+			color: #3d3d3d;
+			font-weight: 600;
+			font-size: 24px;
+            
+		}
+
+		.artist{
+			text-align: center;
+			margin-top: 112px;
+			margin-bottom: 168px;
+			width: 1440px;
+			margin-right: auto;
+			margin-left: auto;
+			font-family: 'Noto Sans KR', sans-serif;
+		}
+
+		.artist span{
+			font-family: 'Kanit', sans-serif;
+			font-size: 32px;
+			color: #3d3d3d;
+			letter-spacing: 0.05em;
+
+		}
+
+		.artist2{
+			display: block;
+			border-radius: 50%;
+		}
+
+		.box1{
+			margin-top: 100px;
+		}
+
+		.box2{
+			display: inline-block;
+			width: 328px;
+			height: 328px;
+			border-radius: 50%;
+			overflow: hidden;
+
+		}
+
+		.item{
+			margin-top: 48px;
+		}
+
+		p {
+			text-align: center;
+			color: #636363;
+		}
+
+		.button{
+			margin-left: auto;
+			margin-right: auto;
+			border: 1px solid #636363;
+			padding: 8px 60px 8px 60px;
+			border-radius: 12px;
+			font-family: 'Noto Sans KR', sans-serif;
+			color: #636363;
+			text-decoration: none;
+
+		}
+
+
+		h2{
+			font-size: 12px;
+			color: #6B6B6B;
+			margin-top: 16px;
+			font-family: 'Noto Sans KR', sans-serif;
+			font-weight: 500;
+
+		}
+
+		h3{
+			font-size: 12px;
+			color: #6B6B6B;
+			margin-top: 4px;
+			font-family: 'Noto Sans KR', sans-serif;
+			font-weight: 500;
+        }
+
+        h4{
+
+        	font-size: 12px;
+			color: #6B6B6B;
+			margin-top: 12px;
+			font-family: 'Noto Sans KR', sans-serif;
+			font-weight: 500;
+			padding-bottom: 12px;
+
+        }
+
+        .plain{
+        	width: 1520px;
+        	display: flex;
+        	justify-content: space-between;
+        	margin-right: auto;
+        	margin-left: auto;
+        	margin-bottom: 168px;
+        }
+        .card{
+        	width: 600px;
+        }
+
+
+
+        .class1{
+        	font-size: 48px;
+        	font-family: 'Kanit', sans-serif;
+        	margin-bottom: 4px;
+        	color: #3d3d3d;
+
+        }
+        .class2{
+        	font-size: 40px;
+        	font-family: 'Noto Sans KR', sans-serif;
+        	font-weight: 600;
+        	color: #3d3d3d;
+        	margin-bottom: 12px;
+        }
+
+        .class3{
+        	color: #3d3d3d;
+        	font-family: 'Noto Sans KR', sans-serif;
+        	margin-bottom: 48px;
+
+        }
+
+        .button2{
+        	text-decoration: none;
+        	padding: 12px;
+        	background-color: #060606;
+        	color: white;
+        	font-family: 'Noto Sans KR', sans-serif;
+        	border-radius: 8px;
+        	font-size: 20px;
+        }
+
+		footer{
+			background-color: #CFCFCF;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+	<div class="logo">Asmrtist</div>
+	<ul class="list">
+		<li><a href="#">ABOUT</a></li>
+		<li><a href="#">커뮤니티</a></li>
+		<li><a href="#">아티스트</a></li>
+		<li><a href="#">마이페이지</a></li>
+	</ul>
+	<div class="login">로그인/가입</div>
+	</div>
+    
+    <div class="container">
+	<div class="image">
+	<div class="text2">ASMR Artist Collection</div>
+	<div class="text"><span>원하는 ASMR</span>을 통해
+		<br>맞는 취향을 골라보세요</div>
+	<a class="text3" href="#">더 알아보기</a>
+		</div>
+	</div>
+
+	<div class="box1">
+		<div class="artist">
+			<span>ABOUT ASMR</span><br>ASMR에 대한 진정한 의미를 알아보아요.
+		</div>
+
+	<div class="plain">	
+		<div class="card">
+	<div class="class1">
+		CHECK OUT OUR ASMR!
+	</div>
+	<div class="class2">웹사이트에 있는 200여가지의
+ASMR, 지금 즐겨보세요. </div>
+    <div class="class3">ASMR에 대해 관심이 있는 사람들, 듣고싶은 사람들을 위해 전용으로 제작된 웹사이트로, 다양한 유튜버들을 탐색하여 취향에 맞는 음악을 찾아보세요.</div>
+    <a class="button2" href="#">지금 확인하기</a>
+</div>
+    <div class="picture"><img src="https://i.postimg.cc/v8jv9rh9/headphones.png" width="600px"></div>
+</div>
+
+<div class="plain">	
+	<div class="picture"><img src="https://i.postimg.cc/zfsWNq0V/mirror-world.png" width="600px"></div>
+		<div class="card">
+	<div class="class1">
+		INFO + COMMUNICATION
+	</div>
+	<div class="class2">웹사이트에 있는 200여가지의
+ASMR, 지금 즐겨보세요. </div>
+    <div class="class3">ASMR에 대해 관심이 있는 사람들, 듣고싶은 사람들을 위해 전용으로 제작된 웹사이트로, 다양한 유튜버들을 탐색하여 취향에 맞는 음악을 찾아보세요.</div>
+    <a class="button2" href="#">지금 확인하기</a>
+</div>
+</div>
+
+<div class="plain">	
+		<div class="card">
+	<div class="class1">
+		CHECK OUT OUR ASMR!
+	</div>
+	<div class="class2">웹사이트에 있는 200여가지의
+ASMR, 지금 즐겨보세요. </div>
+    <div class="class3">ASMR에 대해 관심이 있는 사람들, 듣고싶은 사람들을 위해 전용으로 제작된 웹사이트로, 다양한 유튜버들을 탐색하여 취향에 맞는 음악을 찾아보세요.</div>
+    <a class="button2" href="#">지금 확인하기</a>
+</div>
+    <div class="picture"><img src="https://i.postimg.cc/Bb4gKRXZ/join.png" width="600px"></div>
+</div>
+
+
+
+
+
+
+
+
+	
+	</div>
+
+	<footer>
+		<div class="container4">
+		<ul class="list2">
+		<li><a href="#">회사 소개</a></li>
+		<li><a href="#">개인정보 처리방침</a></li>
+		<li><a href="#">이용약관</a></li>
+		<li><a href="#">유료 이용약관</a></li>
+		<li><a href="#">셀러 이용약관</a></li>
+		<li><a href="#">서비스 소개</a></li>
+	</ul>
+	<h2>사업자 등록번호:556-88-00394</h2>
+	<h3>대표:김제욱 회사명: (주)에이에스엠아티스트</h3>
+	<h4>©Copyright ASMRtist Inc. All Rights Reserved. </h4>
+</div>
+	</footer>
+
+
+
+
+
+
+
+</body>
+</html>
