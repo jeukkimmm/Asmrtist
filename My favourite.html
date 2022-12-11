@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,600&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/32a4d2e812.js" crossorigin="anonymous"></script>
+    <title>WEBSITE</title>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+		}
+
+		.container{
+			margin-top: 8px;
+			margin-bottom:8px;
+			width: 1520px;
+			margin-left: auto;
+			margin-right: auto;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		.container2{
+			margin-top: 60px;
+			width: 1520px;
+			margin-left: auto;
+			margin-right: auto;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		.container3{
+			margin-top: 60px;
+			width: 1520px;
+			margin-left: auto;
+			margin-right: auto;
+			display: flex ;
+			justify-content: space-between;
+
+		}
+
+		.container4{
+			width: 1520px;
+			margin-left: auto;
+			margin-right: auto;
+			padding-top: 32px;
+			display: flex;
+			justify-content: space-between;
+		}
+
+		.container5{
+			margin-top: 56px;
+			margin-bottom: 112px;
+			width: 1520px;
+			display: grid;
+			grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: repeat(2, 200px);
+		    gap:10px 20px;
+		    margin-left: auto;
+		    margin-right: auto;
+		}
+
+		.test1{
+			position: relative;
+			grid-row-start: 1;
+            grid-row-end: 4;
+            grid-column-start: 2;
+            grid-column-end: 4;
+            background-image: url(https://i.postimg.cc/kgypV2yH/eee.jpg);
+            background-size: cover;
+		}
+
+		.test1 h5 {
+		font-family: 'Noto Sans KR', sans-serif;
+         position: absolute;
+         bottom: 0;
+         padding: 12px 24px;
+         width: 100%;
+         background-color: rgba(0, 0, 0, 0.5);
+         color: white;
+         font-size: 24px;
+         font-weight: 500;
+
+         opacity: 0;
+         transition: opacity 0.3s ease-in;
+         }
+
+        .test1:hover h5{
+        opacity: 1;
+        }
+
+        .test1 span{
+        	
+        font-size: 12px;
+        font-weight: 300;
+        }
+
+		.test2{
+	    position: relative;
+	    grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 4;
+        grid-column-end: 6;
+        background-image: url(https://i.postimg.cc/G3Yz8BLj/erere.jpg);
+        background-size: cover;
+        background-position: center;
+		}
+
+		.test2 h5 {
+		font-family: 'Noto Sans KR', sans-serif;
+         position: absolute;
+         bottom: 0;
+         padding: 12px 24px;
+         width: 100%;
+         background-color: rgba(0, 0, 0, 0.5);
+         color: white;
+         font-size: 24px;
+         font-weight: 500;
+
+         opacity: 0;
+         transition: opacity 0.3s ease-in;
+         }
+
+        .test2:hover h5{
+        	opacity: 1;
+        }
+
+        .test2 span{
+        	
+        font-size: 12px;
+        font-weight: 300;
+        }
+
+		.test3{
+			position: relative;
+			grid-row-start:2;
+             grid-row-end: 4;
+             grid-column-start: 4;
+             grid-column-end: 6;
+             background-image: url(https://i.postimg.cc/6pQd0TXg/asmr.jpg);
+            background-size: cover;
+            background-position: center;
+		}
+
+		.test3 h5 {
+		font-family: 'Noto Sans KR', sans-serif;
+         position: absolute;
+         bottom: 0;
+         padding: 12px 24px;
+         width: 100%;
+         background-color: rgba(0, 0, 0, 0.5);
+         color: white;
+         font-size: 24px;
+         font-weight: 500;
+
+         opacity: 0;
+         transition: opacity 0.3s ease-in;
+         }
+
+        .test3:hover h5{
+        	opacity: 1;
+        }
+
+        .test3 span{
+        	
+        font-size: 12px;
+        font-weight: 300;
+        }
+
+		
+
+		.logo{
+			font-size: 24px;
+			font-family: 'Kanit', sans-serif;
+			color: #3d3d3d;
+			margin-left: 8px;
+			text-decoration: none;
+
+		}
+
+		.list{
+			list-style: none;
+			display: flex;
+			font-family: 'Noto Sans KR', sans-serif;
+
+		}
+
+		.list a {
+			font-size: 14px;
+			margin-left: 96px;
+			text-decoration: none;
+			color: #3d3d3d;
+		}
+
+		.list2{
+			list-style: none;
+			display: flex;
+			font-family: 'Noto Sans KR', sans-serif;
+		}
+
+		.list2 a{
+			font-size: 12px;
+			text-decoration: none;
+			color: #3d3d3d;
+			margin-right: 20px;
+		}
+
+		.list a:hover {
+			color: #6727ba;
+		}
+
+		.login{
+			color: white;
+			background-color:#6727ba ;
+			margin-right: 8px;
+			padding: 6px 12px 6px 12px;
+			border: 1px solid #6727BA;
+			font-size: 12px;
+			border-radius: 12px;
+			font-family: 'Noto Sans KR', sans-serif;
+			text-decoration: none;
+		}
+
+		.image{
+			margin-left: auto;
+			margin-right: auto;
+			width: 1520px;
+			height: 400px;
+			background-size: cover;
+			background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1556196148-1fb724238998?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
+			background-position: center;
+			position: relative;
+		}
+
+		.text{
+			position: absolute;
+			bottom: 150px;
+			left: 48px;
+			color: white;
+			font-size: 36px;
+			font-family: 'Noto Sans KR', sans-serif;
+
+
+		}
+
+		.text span{
+			color:  #C99FFF;
+
+		}
+
+		.text2{
+			position: absolute;
+			top: 120px;
+			left: 48px;
+			color: white;
+			font-size: 16px;
+			font-family: 'Noto Sans KR', sans-serif;
+
+		}
+
+		.text3{
+			position: absolute;
+			bottom: 100px;
+			left: 48px;
+			color: white;
+			font-size: 12px;
+			border: 1px solid #6727BA;
+			padding: 6px 12px 6px 12px;
+			border-radius: 12px;
+			font-family: 'Noto Sans KR', sans-serif;
+			background-color: #6727BA;
+			text-decoration: none;
+
+		}
+
+		.text3 a{
+			text-decoration: none;
+		}
+
+		.text4{
+			width: 1520px;
+			text-align: center;
+			margin-left: auto;
+			margin-right: auto;
+			font-size: 20px;
+			font-family: 'Noto Sans KR', sans-serif;
+			margin-top: 36px;
+			color: #757575;
+			letter-spacing: 0.02em;
+		}
+
+		.text4 span{
+			color: #3d3d3d;
+			font-weight: 600;
+			font-size: 24px;
+            
+		}
+
+		.artist{
+			text-align: center;
+			margin-top: 100px;
+			width: 1520px;
+			margin-right: auto;
+			margin-left: auto;
+			font-family: 'Noto Sans KR', sans-serif;
+		}
+
+		.artist span{
+			font-family: 'Kanit', sans-serif;
+			font-size: 32px;
+			color: #3d3d3d;
+			letter-spacing: 0.05em;
+
+		}
+
+		.artist2{
+			display: block;
+			border-radius: 50%;
+		}
+
+		.box1{
+			margin-top: 112px;
+		}
+
+		.box2{
+			display: inline-block;
+			width: 320px;
+			height: 320px;
+			border-radius: 50%;
+			overflow: hidden;
+
+		}
+
+		.box2 .profile:hover {
+			transform: scale(1.1);
+		}
+
+		.profile{
+			width: 320px;
+			height: 320px;
+			object-fit: cover;
+			transition: transform 0.3s;
+		}
+
+		.item{
+			margin-top: 48px;
+		}
+
+		p {
+			margin-top: 36px;
+			text-align: center;
+			color: #636363;
+		}
+
+		a{
+			text-decoration: none;
+		}
+
+		.button{
+			margin-left: auto;
+			margin-right: auto;
+			border: 1px solid #636363;
+			padding: 8px 60px 8px 60px;
+			border-radius: 12px;
+			font-family: 'Noto Sans KR', sans-serif;
+			color: #636363;
+			text-decoration: none;
+			transition: 0.3s ease;
+
+		}
+
+		.button:hover {
+			color: white;
+			border: 1px solid white;
+			background-color: #6727ba;
+		}
+
+		.video{
+			width: 1520px;
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center;
+			margin-top: 56px;
+			border-radius: 12px;
+		}
+
+		h1{ 
+			font-size: 16px;
+			font-weight: 500;
+			margin-top: 12px;
+			font-family: 'Noto Sans KR', sans-serif;
+		}
+
+		h2{
+			font-size: 12px;
+			color: #6B6B6B;
+			margin-top: 16px;
+			font-family: 'Noto Sans KR', sans-serif;
+			font-weight: 500;
+
+		}
+
+		h3{
+			font-size: 12px;
+			color: #6B6B6B;
+			margin-top: 4px;
+			font-family: 'Noto Sans KR', sans-serif;
+			font-weight: 500;
+        }
+
+        h4{
+
+        	font-size: 12px;
+			color: #6B6B6B;
+			margin-top: 12px;
+			font-family: 'Noto Sans KR', sans-serif;
+			font-weight: 500;
+			padding-bottom: 12px;
+
+        }
+
+        .title{
+        	font-size: 24px;
+        	color: #6B6B6B;
+        	font-family: 'Kanit', sans-serif;
+        }
+
+
+		footer{
+			background-color: #CFCFCF;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+	<a class="logo" href="index.html">ASMRTIST</a>
+	<ul class="list">
+		<li><a href="index.html">메인</a></li>
+		<li><a href="index2.html">About</a></li>
+		<li><a href="index3.html">아티스트</a></li>
+		<li><a href="index7.html">스토어</a></li>
+	</ul>
+	<a class="login" href="#">로그인/가입</a>
+	</div>
+    
+    <div class="container">
+	<div class="image">
+	<div class="text2">ASMR Artist Collection</div>
+	<div class="text"><span>원하는 ASMR</span>을 통해
+		<br>맞는 취향을 골라보세요</div>
+	<a class="text3" href="index2.html">더 알아보기</a>
+		</div>
+	</div>
+
+	<div class="box1">
+		<div class="artist">
+			<span>ASMR ARTISTS</span><br>나만의 아티스트를 찾아보세요!
+		</div>
+	</div>
+
+    <div class="container">
+    	<div class="item">
+	<a class="box2" href="index3.html"><img class="profile" src="https://w.namu.la/s/6f553abbe606e1ba86e648888e3096e4636bc48f0879ced8bb75fbd6bf2ac5ac05ba07687b8e515fc7207cf0d0f28aa4389e121f70d0cdd04446add9537a99e8745c89010f1db173c310c7fd356140477393a6e8143eac06380830c29260445d">
+	</a>
+	<a href="index3.html"><p>DANA ASMR</p></a>
+	</div>
+
+	<div class="item">
+	<a class="box2" href="index4.html"><img class="profile" src="https://nationaltoday.com/wp-content/uploads/2021/10/world-whale-day-640x514.jpg">
+	</a>
+	<a href="index4.html"><p>WHALE SOUNDS</p></a>
+	</div>
+
+	<div class="item">
+	<a class="box2" href="index5.html"><img class="profile" src="https://w.namu.la/s/daa6042cb81fe6ff521dc12e6458778ed866f9f850dec3c9de030e8ce34341d8ce99e7b7c8710eedfe5f6e3733d83dccdec8a4c2b14f3c7c04db141025ade875549a059ef150b28e5f9c289f18a7fab419ce77b4cefb0f52eb8c677fa7fa98ca">
+	</a>
+	<a href="index5.html"><p>SOY ASMR</p></a>
+	</div>
+
+	<div class="item">
+	<a class="box2" href="index6.html"><img class="profile" src="https://w.namu.la/s/e0c2a47fd3c7c514f64bdfed11f3bc8f3a4e22550a5e68df4008579dc5e0c0faf376e72a9e034052429c59925ea58cbada6ce72b482e19e1a4f0d8ee8512988afa0dca53aa5a46a83d1eb2803a661fcb38891fcc544e5702edc974cda06ed0868460f6f199df6e37cb6d220b8dcdf54a">
+	</a>
+	<a href="index6.html"><p>MONGSIL</p></a>
+	</div>
+</div>
+     <div class="container2">
+    <a class="button" href="index3.html">
+    	더보기
+    </a>
+</div>
+     
+    <div class="box1">
+		<div class="artist">
+			<span>ABOUT ASMR</span><br>ASMR의 의미를 알아보아요!
+		</div>
+		<div class="video">
+	    <iframe class="videos" width="560" height="315" src="https://www.youtube.com/embed/CQ7rGejIyK0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+
+	<div class="text4">ASMR은 <span>자율감각쾌감반응</span>이라고도 한다. "특정 감각에 뇌가 반응하여 머리 뒤쪽이나 등, 어깨나 팔뚝 등과 같이 주로 신체의 뒷부분에 분포하는 <span>자율 신경계</span>에 신경 전달 물질을 활발히 촉진하게 되는데, 이때 <span>2차적으로 발현되는 전희 현상</span>을 이 ASMR이라고 정의한다.</div>
+
+	 <div class="box1">
+		<div class="artist">
+			<span>COMMUNITY</span><br>다양한 사람들과 함께, 다양한 이야기를.
+		</div>
+	</div>
+	<div class="container5">
+		<a class="test1" href="https://www.instagram.com/asmr_nara/">
+			<h5>ASMR 유튜버 나라의 "일상" 이야기.<br><span>더 알아보고 싶다면 클릭해보세요.</span></h5>
+		</a>
+		<a class="test2" href="https://www.youtube.com/watch?v=Dqf0Za62SDo">
+		<h5>슬리퍼 소리도 ASMR이 가능하다?<br><span>더 알아보고 싶다면 클릭해보세요.</span></h5>
+		</a>
+		<a class="test3" href="https://www.instagram.com/p/CdF-myUpyLJ/">
+			<h5>유튜버들이 여행을 탐색하는 과정.<br><span>더 알아보고 싶다면 클릭해보세요.</span>
+			</h5>
+		</a>
+	</div>
+
+	
+	</div>
+
+	<footer>
+		<div class="container4">
+        <div class="foot">
+		<ul class="list2">
+		<li><a href="#">회사 소개</a></li>
+		<li><a href="#">개인정보 처리방침</a></li>
+		<li><a href="#">이용약관</a></li>
+		<li><a href="#">유료 이용약관</a></li>
+		<li><a href="#">셀러 이용약관</a></li>
+		<li><a href="#">서비스 소개</a></li>
+	</ul>
+	<h2>사업자 등록번호:556-88-00394</h2>
+	<h3>대표:김제욱 회사명: (주)에이에스엠아티스트</h3>
+	<h4>©Copyright ASMRtist Inc. All Rights Reserved. </h4>
+</div>
+	<div class="title">ASMRTIST<br>
+		<span class="fa-brands fa-twitter">
+			<span class="fa-brands fa-facebook">
+				<span class="fa-brands fa-instagram">
+			</div>
+
+</div>
+
+	</footer>
+
+
+
+
+
+
+
+</body>
+</html>
