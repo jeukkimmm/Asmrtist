@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/32a4d2e812.js" crossorigin="anonymous"></script>
+    <title>WEBSITE</title>
+    <style type="text/css">
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            margin-top: 8px;
+            margin-bottom:8px;
+            width: 1520px;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .container2{
+            margin-top: 56px;
+            width: 1520px;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+
+        .container4{
+            width: 1520px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 32px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .logo{
+            font-size: 24px;
+            font-family: 'Kanit', sans-serif;
+            color: #3d3d3d;
+            margin-left: 8px;
+            text-decoration: none;
+
+        }
+
+        .list{
+            list-style: none;
+            display: flex;
+            font-family: 'Noto Sans KR', sans-serif;
+
+        }
+
+        .list a {
+            font-size: 14px;
+            margin-left: 96px;
+            text-decoration: none;
+            color: #3d3d3d;
+        }
+
+        .list a:hover {
+            color: #6727ba;
+        }
+
+        .list2{
+            list-style: none;
+            display: flex;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+
+        .list2 a{
+            font-size: 12px;
+            text-decoration: none;
+            color: #3d3d3d;
+            margin-right: 20px;
+
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .login{
+            color: white;
+            background-color:#6727ba ;
+            margin-right: 8px;
+            padding: 6px 12px 6px 12px;
+            border: 1px solid #6727BA;
+            font-size: 12px;
+            border-radius: 12px;
+            font-family: 'Noto Sans KR', sans-serif;
+            text-decoration: none;
+        }
+
+         .login1 {
+            width: 1520px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            font-weight: 600;
+            margin-top: 112px;
+        }
+
+        .login2 {
+            width: 1520px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .login2:first-child {
+            margin-top: 112px;
+        }
+
+        .login3 {
+            display: block;
+            font-size: 16px;
+            border: 1px solid #6727BA;
+             width: 400px;
+             margin-left: auto;
+             margin-right: auto;
+             padding: 8px;
+             margin-top: 8px;
+             font-family: 'Noto Sans KR', sans-serif;
+             color: #3d3d3d;
+             border-radius: 8px;
+             transition: 0.3s ease;
+        }
+
+        .login3:hover {
+            background-color:#6727ba ;
+            color: white;
+        }
+
+
+
+        .login-form {
+            border-radius: 5px;
+            padding: 20px;
+            width: 400px;
+            margin-right: auto;
+            margin-left: auto;
+
+
+        }
+
+        .text-field {
+            font-size: 14px;
+            border-radius: 5px;
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 16px;
+            border: 1px solid #3d3d3d;
+            font-weight: 600;
+        }
+
+        .submit-btn {
+            font-size: 14px;
+            background-color: #6727ba;
+            border-radius: 5px;
+            width: 100%;
+            padding: 16px;
+            border: none;
+            color: white;
+            font-weight: 600;
+        }
+
+        .image{
+            margin-left: auto;
+            margin-right: auto;
+            width: 1520px;
+            height: 400px;
+            background-size: cover;
+            background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
+            background-position: center;
+            position: relative;
+        }
+
+        .text{
+            position: absolute;
+            bottom: 150px;
+            left: 48px;
+            color: white;
+            font-size: 36px;
+            font-family: 'Noto Sans KR', sans-serif;
+
+
+        }
+
+        .text span{
+            color:  #C99FFF;
+
+        }
+
+        .text2{
+            position: absolute;
+            top: 120px;
+            left: 48px;
+            color: white;
+            font-size: 16px;
+            font-family: 'Noto Sans KR', sans-serif;
+
+        }
+
+        .text3{
+            position: absolute;
+            bottom: 100px;
+            left: 48px;
+            color: white;
+            font-size: 12px;
+            border: 1px solid #6727BA;
+            padding: 6px 12px 6px 12px;
+            border-radius: 12px;
+            font-family: 'Noto Sans KR', sans-serif;
+            background-color: #6727BA;
+            text-decoration: none;
+
+        }
+
+        .text3 a{
+            text-decoration: none;
+        }
+
+        .text4{
+            width: 1440px;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 20px;
+            font-family: 'Noto Sans KR', sans-serif;
+            margin-top: 36px;
+            color: #757575;
+            letter-spacing: 0.02em;
+        }
+
+        .text4 span{
+            color: #3d3d3d;
+            font-weight: 600;
+            font-size: 24px;
+            
+        }
+
+        .artist{
+            text-align: center;
+            margin-top: 112px;
+            margin-bottom: 168px;
+            width: 1440px;
+            margin-right: auto;
+            margin-left: auto;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+
+        .artist span{
+            font-family: 'Kanit', sans-serif;
+            font-size: 32px;
+            color: #3d3d3d;
+            letter-spacing: 0.05em;
+
+        }
+
+        .find {
+            color: #3d3d3d;
+            font-size: 12px;
+        }
+
+        .artist2{
+            display: block;
+            border-radius: 50%;
+        }
+
+        .box1{
+            margin-top: 100px;
+        }
+
+        .box2{
+            display: inline-block;
+            width: 328px;
+            height: 328px;
+            border-radius: 50%;
+            overflow: hidden;
+
+        }
+
+        .item{
+            margin-top: 48px;
+        }
+
+        p {
+            text-align: center;
+            color: #636363;
+        }
+
+        .button{
+            margin-left: auto;
+            margin-right: auto;
+            border: 1px solid #636363;
+            padding: 8px 60px 8px 60px;
+            border-radius: 12px;
+            font-family: 'Noto Sans KR', sans-serif;
+            color: #636363;
+            text-decoration: none;
+
+        }
+
+        .button2{
+            transition: 0.3s ease;
+        }
+
+        .button2 span {
+            color:white;
+        }
+
+        .button2:hover {
+            background-color: white;
+            color: #6727ba;
+            border:1px solid #6727ba;
+        }
+
+        .button2:hover span{
+            color: #6727ba;
+        }
+
+
+
+        h2{
+            font-size: 12px;
+            color: #6B6B6B;
+            margin-top: 16px;
+            font-family: 'Noto Sans KR', sans-serif;
+            font-weight: 500;
+
+        }
+
+        h3{
+            font-size: 12px;
+            color: #6B6B6B;
+            margin-top: 4px;
+            font-family: 'Noto Sans KR', sans-serif;
+            font-weight: 500;
+        }
+
+        h4{
+
+            font-size: 12px;
+            color: #6B6B6B;
+            margin-top: 12px;
+            font-family: 'Noto Sans KR', sans-serif;
+            font-weight: 500;
+            padding-bottom: 12px;
+
+        }
+
+        h5 {
+            font-family: 'Kanit', sans-serif;
+            font-size: 36px;
+        }
+
+        h6 {
+            font-family: 'Kanit', sans-serif;
+            font-size: 16px;
+        }
+
+        .plain{
+            width: 1520px;
+            display: flex;
+            justify-content: space-between;
+            margin-right: auto;
+            margin-left: auto;
+            margin-bottom: 168px;
+        }
+        .card{
+            width: 600px;
+        }
+
+
+
+        .class1{
+            font-size: 48px;
+            font-family: 'Kanit', sans-serif;
+            margin-bottom: 4px;
+            color: #3d3d3d;
+
+        }
+        .class2{
+            font-size: 40px;
+            font-family: 'Noto Sans KR', sans-serif;
+            font-weight: 600;
+            color: #3d3d3d;
+            margin-bottom: 12px;
+        }
+
+        .class3{
+            color: #3d3d3d;
+            font-family: 'Noto Sans KR', sans-serif;
+            margin-bottom: 48px;
+
+        }
+
+        .button2{
+            text-decoration: none;
+            padding: 12px;
+            background-color: #6727ba;
+            color: white;
+            font-family: 'Noto Sans KR', sans-serif;
+            border-radius: 8px;
+            font-size: 20px;
+        }
+
+        .title{
+            font-size: 24px;
+            color: #6B6B6B;
+            font-family: 'Kanit', sans-serif;
+        }
+
+        footer{
+            background-color: #CFCFCF;
+            margin-top: 112px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <a class="logo" href="index.html">ASMRTIST</a>
+    <ul class="list">
+        <li><a href="index.html">메인</a></li>
+        <li><a href="index2.html">About</a></li>
+        <li><a href="index3.html">아티스트</a></li>
+        <li><a href="index7.html">스토어</a></li>
+    </ul>
+    <a class="login" href="#">로그인/가입</a>
+    </div>
+    
+    <div class="container">
+    <div class="image">
+    <div class="text2">자율신경쾌감의 의미</div>
+    <div class="text">ASMR의 정의를 통해
+        <br>진정한 의미를 알아보아요.</div>
+    <a class="text3" href="index2.html">더 알아보기</a>
+        </div>
+    </div>
+
+    <div class="login1">
+        <h5>ASMRTIST</h5>
+        <h6>ASMR EXPERTS AROUND THE WORLD</h6>
+    </div>
+    <div class="login2">
+    <div class="login-form">
+    
+    <form>
+      <input type="text" name="email" class="text-field" placeholder="아이디"><br>
+      <input type="password" name="password" class="text-field" placeholder="비밀번호"><br>
+      <input type="submit" value="로그인" class="submit-btn">
+    </form>
+
+    <a class="find" href="#">아이디 찾기 ㅣ 비밀번호 찾기</div></a>
+
+        <a class="login3" href="#">
+            <span class="fa fa-google"></span>    구글로 로그인
+        </a>
+        <a class="login3" href="#">
+            <span class="fa fa-twitter"></span>    트위터로 로그인
+        </a>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    
+    </div>
+
+    <footer>
+        <div class="container4">
+            <div class="foot">
+        <ul class="list2">
+        <li><a href="#">회사 소개</a></li>
+        <li><a href="#">개인정보 처리방침</a></li>
+        <li><a href="#">이용약관</a></li>
+        <li><a href="#">유료 이용약관</a></li>
+        <li><a href="#">셀러 이용약관</a></li>
+        <li><a href="#">서비스 소개</a></li>
+    </ul>
+    <h2>사업자 등록번호:556-88-00394</h2>
+    <h3>대표:김제욱 회사명: (주)에이에스엠아티스트</h3>
+    <h4>©Copyright ASMRtist Inc. All Rights Reserved. </h4>
+    </div>
+    <div class="title">ASMRTIST<br>
+        <span class="fa-brands fa-twitter">
+            <span class="fa-brands fa-facebook">
+                <span class="fa-brands fa-instagram">
+            </div>
+</div>
+
+    </footer>
+
+
+
+
+
+
+
+</body>
+</html>
